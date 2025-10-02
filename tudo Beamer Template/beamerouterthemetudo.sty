@@ -1,0 +1,79 @@
+\ProvidesPackage{beamerouterthemetudo}
+
+
+
+\newlength{\headerInnerHeightUp}
+\setlength{\headerInnerHeightUp}{28pt}
+\newlength{\headerOuterHeightDown}
+\setlength{\headerOuterHeightDown}{2pt}
+\defbeamertemplate*{headline}{headline}{
+    \leavevmode
+    \begin{beamercolorbox}
+        [
+            wd=0.5\paperwidth,
+            % sep=1em,
+            ht=\headerInnerHeightUp,
+            leftskip=5pt
+        ]
+        {headlinecolorUp}
+        {\scriptsize \insertshortinstitute
+        
+        \vspace{2pt}
+        \insertauthor
+        }
+        % \insertinstitute
+        \vskip5pt
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}
+        [
+            wd=0.5\paperwidth,
+            % sep=1em,
+            ht=\headerInnerHeightUp,
+            right,
+            rightskip=5pt
+        ]
+        {headlinecolorUp}
+        \includegraphics[height=0.6\headerInnerHeightUp]{illustrations/tud_logo_negativ.eps}
+        \vskip5pt
+    \end{beamercolorbox}
+
+\begin{beamercolorbox}
+    [
+        wd=\paperwidth,
+        ht=\headerOuterHeightDown,
+    ]
+    {headlinecolorDown}
+\end{beamercolorbox}
+
+}
+
+\setbeamertemplate{headline}[frametitle in headline]
+
+\newlength{\footerInnerWidth}
+\setlength{\footerInnerWidth}{0.7\paperwidth}
+\newlength{\footerOuterWidth}
+\setlength{\footerOuterWidth}{0.15\paperwidth}
+
+\setbeamertemplate{footline}{
+\hspace{\footerOuterWidth}
+\begin{beamercolorbox}
+    [
+        wd=\footerInnerWidth,
+        ht=2pt
+    ]
+    {footlinecolorUp}
+\end{beamercolorbox}
+\hspace{\footerOuterWidth}
+
+\begin{beamercolorbox}
+    [
+        wd=\paperwidth,
+        ht=15pt,
+        right,
+        rightskip=5pt
+    ]
+    {footlinecolorDown}
+    {\insertpagenumber}
+    \vspace{5pt}
+\end{beamercolorbox}
+}

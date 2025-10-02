@@ -1,0 +1,30 @@
+\RequirePackage{tikz}
+
+\setbeamertemplate{section in toc}
+{$\bullet$ \inserttocsection\par}
+
+\setbeamertemplate{subsection in toc}
+{\leavevmode\leftskip=1.5em$\bullet$ \inserttocsubsection\par}
+
+\setbeamertemplate{subsubsection in toc}
+{\leavevmode\normalsize\usebeamerfont{subsection in toc}\leftskip=3em%
+  \usebeamerfont{subsubsection in toc}$\bullet$ \inserttocsubsubsection\par}
+
+\setbeamertemplate{itemize item}{
+    \hbox{\tikz[]{
+        \draw (0,0) circle [radius=0.3*\f@size pt];
+    }}
+}
+\setbeamertemplate{itemize subitem}{
+    \hbox{\tikz[]{
+        \draw (0,0) circle [radius=0.3*\f@size pt];
+        \draw (0,0) circle [radius=0.2*\f@size pt];
+    }}
+}
+\setbeamertemplate{itemize subsubitem}{
+    \hbox{\tikz[]{
+        \draw (0,0) circle [radius=0.3*\f@size pt];
+        \draw (0,0) circle [radius=0.2*\f@size pt];
+        \draw (0,0) circle [radius=0.1*\f@size pt];
+    }}
+}
