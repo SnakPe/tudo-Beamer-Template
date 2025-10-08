@@ -1,0 +1,58 @@
+\documentclass[aspectratio=169, 12pt]{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{xcolor} % Required for inserting images
+\usepackage{fancyhdr}
+\title{tudo Beamer Template}
+\author{Author }
+\institute[Short Institute]{
+    Institute
+}
+\date{Date}
+% \usepackage{tikz}   
+
+\usetheme{tudo}
+\beamertemplatenavigationsymbolsempty
+\begin{document}
+    \begin{frame}
+        \titlepage
+    \end{frame}
+    \begin{frame}
+        \frametitle{Outline}
+        \tableofcontents
+    \end{frame}
+    \section{Section 1}
+    \subsection{Subsection 1}
+    \subsubsection{Subsubsection 1}
+    \section{Section 2}
+    \begin{frame}{Itemize/Enumerate}
+        \begin{itemize}
+            \item This is a helpful sentence.
+            \begin{itemize}
+                \item This provides helpful additional information 
+                \begin{itemize}
+                    \item This provides helpful examples
+                \end{itemize}
+            \end{itemize}
+        \end{itemize}
+        \begin{enumerate}
+            \item This is a helpful sentence.
+            \begin{enumerate}
+                \item This provides helpful additional information 
+                \begin{enumerate}
+                    \item This provides helpful examples
+                \end{enumerate}
+            \end{enumerate}
+        \end{enumerate}
+    \end{frame}
+    \begin{frame}{This is a cool example title}
+    This is some example text lol. The purpuse of this text is to be displayed in this document.
+    
+    This is a picture:
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{illustrations/tud_logo_cmyk.eps}
+        \caption{This is a caption}
+        \label{fig:enter-label}
+    \end{figure}
+    \end{frame}
+\end{document}
